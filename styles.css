@@ -1,0 +1,137 @@
+html{
+    background-color: black;
+}
+button{
+background-color: red; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+left:460px;
+position: relative;
+border-style: solid;
+border-width: 5px;
+border-color: white;
+}
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.game{
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+#colors{
+    padding-top: 10px;
+}
+#score{
+    color:white;
+    text-align:center;
+}
+#character{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position:absolute;
+    top: 160px;
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 160px;transform:rotate(0deg)}
+    30%{top: 75px;}
+    70%{top: 75px;}
+    100%{top: 160px;transform:rotate(180deg)}
+}
+#blueButton{
+    background-color: blue; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+left:460px;
+position: relative;
+}
+
+#redButton{
+    background-color: red; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+left:460px;
+position: relative;
+}
+
+#yellowButton{
+    background-color: yellow; /* Green */
+border: none;
+color: black;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+left:460px;
+position: relative;
+}
+
+#greenButton{
+    background-color: green; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+left:460px;
+position: relative;
+}
+#whiteButton{
+    background-color: white; /* Green */
+border: none;
+color: black;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+left:460px;
+position: relative;
+}
+
+
+
+#enemy{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 170px;
+    left: 500px;
+    animation: enemy 1s infinite linear;
+    padding:0px; 
+}
+@keyframes enemy{
+    0%{left: 500px}
+    100%{left: -20px}
+}
